@@ -1,7 +1,7 @@
 import joblib
 from flask import Flask, request, jsonify
 app=Flask(__name__)
-model=joblib.load('Iris_model.pkl')
+model=joblib.load('iris_model.pkl')
 @app.route("/")
 def home():
     return jsonify({"message":"Welcome to the Iris Species Prediction API!"})  
